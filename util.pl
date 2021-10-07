@@ -77,7 +77,7 @@ getValorCarta(Carta, R):- nth0(0, Carta, Valor), atom_number(Valor, R).
 calculaMaiorValorCarta(Carta, [], Carta):- !.
 calculaMaiorValorCarta(Carta, [H|T], R):- (getValorCarta(H, ValorH), getValorCarta(Carta, ValorC), ValorH > ValorC -> calculaMaiorValorCarta(H, T, R); 
                                                                                                                  calculaMaiorValorCarta(Carta, T, R)).
-                                                                                                                
+
         
 verificaIndicesDisponiveis(Indice, _, Jogador, []):- length(Jogador, LenJog), Indice =:= LenJog, !.
 verificaIndicesDisponiveis(Indice, Mesa, Jogador, [Indice|R]):- verificaViabilidadeIndice(Indice, Mesa, Jogador, R2), R2 =:= 1, I2 is Indice + 1, verificaIndicesDisponiveis(I2, Mesa, Jogador, R), !.
@@ -143,6 +143,7 @@ removeCartaJogador(Carta, [H|T], [H|R]) :- removeCartaJogador(Carta, T, R).
 adicionaCartaJogador([C|_], MaoJogador, R):- append([C], MaoJogador, R).
 adiciona2CartasJogador([C1,C2|_], MaoJogador, R):- append([C1,C2], MaoJogador, R).
 adiciona4CartasJogador([C1,C2,C3,C4|_], MaoJogador, R):- append([C1,C2,C3,C4], MaoJogador, R).
+
 
 removeCartaBaralho([_|T], T).
 remove2CartasBaralho([_, _|T], T).

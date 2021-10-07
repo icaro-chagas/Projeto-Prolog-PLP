@@ -42,7 +42,14 @@ painelCartasIniciais(ListaJogadores, NumJogadores):-
                            write("Jogador 2: "), writeln(Jogador2),
                            write("Jogador 3: "), writeln(Jogador3),
                            write("Jogador 4: "), writeln(Jogador4)),
-     nl, nl, writeln("Pressione Enter para continuar!").
+    nl,
+    writeln("Observação quanto ao tipo das cartas:"),
+    writeln("   I = Carta Inverter"),
+    writeln("   P = Carta Pular"),
+    writeln("   +2 = Carta +2"),
+    writeln("   C = Carta Coringa"),
+    writeln("   C+4 = Carta Coringa +4"),
+    nl, writeln("Pressione Enter para continuar!").
 
 painelOpcaoJogo:-
     writeln("Você deseja jogar ou apenas observar bots jogarem? "),
