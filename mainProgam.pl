@@ -10,7 +10,7 @@
 main:- 
         tty_clear,
         painelApresentacao,
-        read_line_to_string(user_input, _),		
+        read_line_to_string(user_input, _),
         validaQuantidadeJogadores.
       
       

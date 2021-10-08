@@ -244,12 +244,12 @@ painel2Jogadores(ListaJogadores, IndiceJogador, Tipo):- IndiceJogador =:= 1, Tip
 painel2Jogadores(ListaJogadores,IndiceJogador, Tipo):- IndiceJogador =:= 0, Tipo = "fim", nth0(1, ListaJogadores, Jogador2),
             writeln(" -- Fim do Jogo -- "), 
             writeln("Jogador 1: VENCEDOR!"),
-            write("Jogador 2: "), writeln(Jogador2).
+            write("Jogador 2: "), writeln(Jogador2), nl.
             
 painel2Jogadores(ListaJogadores,IndiceJogador, Tipo):- IndiceJogador =:= 1, Tipo = "fim", nth0(0, ListaJogadores, Jogador1),
             writeln(" -- Fim do Jogo -- "),
             write("Jogador 1: "), writeln(Jogador1),
-            writeln("Jogador 2: VENCEDOR!").
+            writeln("Jogador 2: VENCEDOR!"), nl.
                                                           
 %_____________________________________________________________________________________________________________________________________
 %PAINEL 3 JOGADORES
@@ -293,19 +293,19 @@ painel3Jogadores(ListaJogadores, IndiceJogador, Tipo):- IndiceJogador =:= 0, Tip
             writeln(" -- Fim do Jogo -- "),
             writeln("Jogador 1: VENCEDOR!"),
             write("Jogador 2: "), writeln(Jogador2),
-            write("Jogador 3: "), writeln(Jogador3).
+            write("Jogador 3: "), writeln(Jogador3), nl.
             
 painel3Jogadores(ListaJogadores, IndiceJogador, Tipo):- IndiceJogador =:= 1, Tipo = "fim", nth0(0, ListaJogadores, Jogador1), nth0(2, ListaJogadores, Jogador3),
             writeln(" -- Fim do Jogo -- "),
             write("Jogador 1: "), writeln(Jogador1),
             writeln("Jogador 2: VENCEDOR!"),
-            write("Jogador 3: "), writeln(Jogador3).
+            write("Jogador 3: "), writeln(Jogador3), nl.
             
 painel3Jogadores(ListaJogadores, IndiceJogador, Tipo):- IndiceJogador =:= 2, Tipo = "fim", nth0(0, ListaJogadores, Jogador1), nth0(1, ListaJogadores, Jogador2),
             writeln(" -- Fim do Jogo -- "), 
             write("Jogador 1: "), writeln(Jogador1),
             write("Jogador 2: "), writeln(Jogador2),
-            writeln("Jogador 3: VENCEDOR!").
+            writeln("Jogador 3: VENCEDOR!"), nl.
             
 %_____________________________________________________________________________________________________________________________________
 %PAINEL 4 JOGADORES
@@ -371,7 +371,7 @@ painel4Jogadores(ListaJogadores, IndiceJogador, Tipo):- IndiceJogador =:= 0, Tip
             writeln("Jogador 1: VENCEDOR!"),
             write("Jogador 2: "), writeln(Jogador2),
             write("Jogador 3: "), writeln(Jogador3),
-            write("Jogador 4: "), writeln(Jogador4).
+            write("Jogador 4: "), writeln(Jogador4), nl.
             
 painel4Jogadores(ListaJogadores, IndiceJogador, Tipo):- IndiceJogador =:= 1, Tipo = "fim", nth0(0, ListaJogadores, Jogador1), 
                                                           nth0(2, ListaJogadores, Jogador3), nth0(3, ListaJogadores, Jogador4),
@@ -379,7 +379,7 @@ painel4Jogadores(ListaJogadores, IndiceJogador, Tipo):- IndiceJogador =:= 1, Tip
             write("Jogador 1: "), writeln(Jogador1),
             writeln("Jogador 2: VENCEDOR!"),
             write("Jogador 3: "), writeln(Jogador3),
-            write("Jogador 4: "), writeln(Jogador4).
+            write("Jogador 4: "), writeln(Jogador4), nl.
             
 painel4Jogadores(ListaJogadores, IndiceJogador, Tipo):- IndiceJogador =:= 2, Tipo = "fim", nth0(0, ListaJogadores, Jogador1), 
                                                           nth0(1, ListaJogadores, Jogador2), nth0(3, ListaJogadores, Jogador4),
@@ -387,7 +387,7 @@ painel4Jogadores(ListaJogadores, IndiceJogador, Tipo):- IndiceJogador =:= 2, Tip
             write("Jogador 1: "), writeln(Jogador1),
             write("Jogador 2: "), writeln(Jogador2),
             writeln("Jogador 3: VENCEDOR!"),
-            write("Jogador 4: "), writeln(Jogador4).
+            write("Jogador 4: "), writeln(Jogador4), nl.
             
 painel4Jogadores(ListaJogadores, IndiceJogador, Tipo):- IndiceJogador =:= 3, Tipo = "fim", nth0(0, ListaJogadores, Jogador1), 
                                                           nth0(1, ListaJogadores, Jogador2), nth0(2, ListaJogadores, Jogador3),
@@ -395,4 +395,4 @@ painel4Jogadores(ListaJogadores, IndiceJogador, Tipo):- IndiceJogador =:= 3, Tip
             write("Jogador 1: "), writeln(Jogador1),
             write("Jogador 2: "), writeln(Jogador2),
             write("Jogador 3: "), writeln(Jogador3),
-            writeln("Jogador 4: VENCEDOR!").
+            writeln("Jogador 4: VENCEDOR!"), nl.
