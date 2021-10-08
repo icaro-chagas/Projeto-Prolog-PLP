@@ -28,7 +28,7 @@ O Uno é um jogo de cartas, ao qual pode ser jogado por até 4 pessoas e a prime
     
 ## Como executar
 
-* **Caso você rode o programa em windows**: 
+* **Não é possivel rodar o programa em windows**: 
   * Por algum motivo o comando tty_clear não é reconhecido no windows, então, sugere-se executar o programa em linux.<br>
 
 * **Para rodar o programa em Linux**:
